@@ -168,6 +168,9 @@
 		</div>
 	</body>
 	<script type="text/javascript">
+		if(localStorage.getItem("userId") == null || localStorage.getItem("userID") == ""){
+			window.location.href="../login/login.html";
+		}
 		//多选按钮
 		var ch = document.getElementsByName("item");
 		function DoCheck() {
