@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0, user-scalable=no">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../assets/css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../assets/css/TY.css"/>
+		<link rel="stylesheet" type="text/css" href="my.css"/>
+		<script src="../../assets/js/rem.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="TYheader">
+			<div class="TYheader_center">
+				<span>我的</span>
+			</div>
+		</div>
+		<div class="TYsection">
+			<div class="myTop">
+				<div class="myTop_img">
+					<img src="../../assets/img/photo.png"/>
+				</div>
+				<div class="myTop_center">
+					<div>挥着翅膀的鱼</div>
+					<div>Email：123456789@qq.com</div>
+				</div>
+				<div class="myTop_edit">
+					<a href="myEdit.html">
+						<img src="../../assets/img/my/edit.png"/>
+					</a>
+				</div>
+			</div>
+			<div class="myCenter">
+				<div class="myCenter_line">
+					<a href="../study/CourseSelection.html">
+						<div class="myCenter_lineIcon">
+							 <img src="../../assets/img/my/kecheng.png"/>
+						</div>
+						<div class="myCenter_lineText">
+							<span>我的课程</span>
+							<img src="../../assets/img/my/more.png" alt="" />
+						</div>
+					</a>
+				</div>
+				<div class="myCenter_line">
+					<a href="contact.html">
+						<div class="myCenter_lineIcon">
+							 <img src="../../assets/img/my/lianxi.png"/>
+						</div>
+						<div class="myCenter_lineText">
+							<span>联系我们</span>
+							<img src="../../assets/img/my/more.png" alt="" />
+						</div>
+					</a>
+				</div>
+				<div class="myCenter_line">
+					<a href="">
+						<div class="myCenter_lineIcon">
+							 <img src="../../assets/img/my/guanyu.png"/>
+						</div>
+						<div class="myCenter_lineText">
+							<span>关于</span>
+							<img src="../../assets/img/my/more.png" alt="" />
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="myButton" onclick="Quit()">
+				<span>退出登录</span>
+			</div>
+		</div>
+		<div class="TYfooter">
+			<div>
+				<a href="../home/index.html">
+					<div>
+						<img src="../../assets/img/home/home_up.png"/>
+						<img src="../../assets/img/home/home_down.png"/>
+					</div>
+					<div>首页</div>
+				</a>
+			</div>
+			<div>
+				<a href="../buy/buy.html">
+					<div>
+						<img src="../../assets/img/home/shopping_up.png"/>
+						<img src="../../assets/img/home/shopping_down.png"/>
+					</div>
+					<div>购课</div>
+				</a>
+			</div>
+			<div>
+				<a href="../study/CourseSelection.html">
+					<div>
+						<img src="../../assets/img/home/learn_up.png"/>
+						<img src="../../assets/img/home/learn_down.png"/>
+					</div>
+					<div>学习</div>
+				</a>
+			</div>
+			<div class="active">
+				<a href="my.html">
+					<div>
+						<img src="../../assets/img/home/my_up.png"/>
+						<img src="../../assets/img/home/my_down.png"/>
+					</div>
+					<div>我的</div>
+				</a>
+			</div>
+		</div>
+		<script type="text/javascript">
+			//判断是否登录  没有登录跳转到登录页
+			if(localStorage.getItem("userId") == null || localStorage.getItem("userID") == ""){
+				window.location.href="../login/login.html";
+			}
+			function Quit(){
+				localStorage.removeItem("userId");
+				window.location.href="../login/login.html"
+			}
+		</script>
+	</body>
+</html>

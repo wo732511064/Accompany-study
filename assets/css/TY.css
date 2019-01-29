@@ -1,0 +1,56 @@
+.blueBj{background: #4475f8 !important;}
+.redBj{background: #f55e48 !important;}
+.redText{color: #f55e48 !important;}
+
+.TYheader{width: 100%;height: 0.88rem;background: #4475f8;position: fixed;width: 100%;top: 0;left: 0;z-index: 1;}
+.TYheader1{width: 100%;height: 0.88rem;background: #f2f2f2;position: fixed;width: 100%;top: 0;left: 0;z-index: 1;}
+.TYheader1 .TYheader_center{color: #333333;}
+.TYheader_left{font-size: 0.28rem;position: absolute;top: 0;left: 0;width: 1rem;height: 100%;text-align: center;line-height: 0.88rem;}
+.TYheader_left img{width: 0.26rem;position: absolute;left: 0.2rem;top:0.25rem}
+.TYheader_left a{display: block;color: #333333;font-size: 0.28rem;}
+.TYheader_center{font-size: 0.34rem;z-index: 1;position: absolute;width:5.8rem;height: 0.6rem;top: 0.14rem;left: 50%;margin-left: -2.9rem;line-height: 0.6rem;color: white;text-align: center;}
+.TYheader_search{z-index: 1;position: absolute;width:5.8rem;height: 0.6rem;top: 0.14rem;border-radius: 0.3rem;left: 50%;margin-left: -2.9rem;line-height: 0.6rem;background: #ffffff;}
+.TYheader_search>input{font-size: 0.26rem;box-sizing: border-box;position: absolute;width: 100%;height: 100%;outline: none;background: none;border: 0;padding-left: 0.5rem;}
+.TYheader_search>input:focus~.TYheader_searchTishi span{display: none;}
+.TYheader_search>input:focus~.TYheader_searchTishi{text-align: left;}
+.TYheader_search>input:valid~.TYheader_searchTishi span{display: none;}
+.TYheader_search>input:valid~.TYheader_searchTishi{text-align: left;}
+.TYheader_searchTishi{z-index: 0;width: 100%;text-align: center;padding:0 0.15rem;box-sizing: border-box;}
+.TYheader_searchTishi img,.TYheader_searchTishi span{vertical-align: middle;font-size: 0.26rem;color: #cccccc;}
+.TYheader_searchTishi img{width: 0.24rem;}
+.TYheader_right{position: absolute;top: 0;right: 0;width: 0.8rem;height: 100%;text-align: center;line-height: 0.88rem;}
+.TYheader_right img{vertical-align: middle;width: 0.38rem;}
+.TYheader_right.active:before{content: "";width: 0.14rem;height: 0.14rem;border-radius: 50%;background: #f4523b;position: absolute;right: 0.2rem;top: 0.25rem;}
+.TYheader_rightButton{width: 0.8rem;height: 0.48rem;font-size: 0.28rem;color: white;background: #f4523b;line-height: 0.48rem;border-radius: 0.05rem;margin-left: -0.2rem;margin-top: 0.2rem;}
+
+.TYsection{z-index: 0;position: relative;width: 100%;overflow-y: auto;background: #f5f5f5;padding-top: 0.88rem;padding-bottom: 1rem;height: calc(100% - 1.88rem);}
+.TYsection1{z-index: 0;position: relative;width: 100%;overflow-y: auto;background: #f5f5f5;padding-top: 0.88rem;height: calc(100% - 0.88rem);}
+.TYsection2{z-index: 0;position: relative;width: 100%;overflow-y: auto;background: #f5f5f5;padding-bottom: 1rem;height: calc(100% - 1rem);}
+
+
+.TYfooter{border-top: 1px solid #e5e5e5;position: fixed;bottom: 0;left: 0;width: 100%;height: 1rem;background: white;}
+.TYfooter>div{float: left;width: 25%;text-align: center;}
+.TYfooter>div div:first-of-type{line-height: 0.6rem;}
+.TYfooter>div div:last-of-type{color: #999999;font-size: 0.2rem;}
+.TYfooter>div.active div:last-of-type{color: #333333;}
+.TYfooter>div img{width: 0.42rem;vertical-align: middle;}
+.TYfooter div img:nth-of-type(2),.TYfooter div.active img:nth-of-type(1){display: none;}
+.TYfooter div.active img:nth-of-type(2){display: inline-block;}
+
+
+/*轮播图*/
+.index_banner{width:100%;overflow:hidden;position:relative;}
+.index_banner .banner_images{width:1000%;}
+.index_banner .banner_images li{float:left;width:10%}
+.index_banner .banner_images li a{display:block;width:100%}
+.index_banner .banner_images li a img{display:block;width:100%;height: 3rem;object-fit: cover;}
+.index_banner .banner_index{position:absolute;bottom:0.1rem;width: 100%;text-align: center}
+.banner_index-frame{display: inline-block;}
+.index_banner .banner_index li{transition: all 0.3s;margin-right:0.15rem ;float:left;width:0.1rem;height:0.1rem;border-radius:50%;background: #FFFFFF;}
+.index_banner .banner_index li.current{transition: all 0.3s;background-color:#4475f8;width: 0.1rem;}
+.train_banner_left{position:absolute;left: 0;top:0;height: 100%;width: 0.5rem;text-align: center;z-index: 5;color: #FFFFFF;}
+.train_banner_left img,.train_banner_right img{width: 0.2rem;}
+
+.train_banner_right{position:absolute;right: 0;top:0;height: 100%;width:0.5rem;text-align: center;z-index: 5;color: #FFFFFF;}
+.train_banner_left:hover,.train_banner_right:hover{display: block;opacity: 0.5;}
+.train_banner_li{position: absolute;top:50%;width: 100%;text-align: center;}

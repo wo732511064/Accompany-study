@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0, user-scalable=no">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../assets/css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../assets/css/TY.css"/>
+		<link rel="stylesheet" type="text/css" href="my.css"/>
+		<script src="../../assets/js/rem.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="TYheader">
+			<div class="TYheader_left">
+				<a href="my.html">
+					<img src="../../assets/img/home/back.png" />
+				</a>
+				
+			</div>
+			<div class="TYheader_center">
+				<span>联系我们</span>
+			</div>
+		</div>
+		<div class="TYsection">
+			<div class="myCenter">
+				<div class="myCenter_line">
+					<a href="#">
+						<div class="myCenter_lineIcon">
+							 <img src="../../assets/img/my/zhihu.png"/>
+						</div>
+						<div class="myCenter_lineText">
+							<span>知乎号</span>
+							<img src="../../assets/img/my/more.png" alt="" />
+						</div>
+					</a>
+				</div>
+				<div class="myCenter_line">
+					<a href="https://weibo.com/5339025762/profile?topnav=1&wvr=6&is_all=1">
+						<div class="myCenter_lineIcon">
+							 <img src="../../assets/img/my/weibo.png"/>
+						</div>
+						<div class="myCenter_lineText">
+							<span>新浪微博</span>
+							<img src="../../assets/img/my/more.png" alt="" />
+						</div>
+					</a>
+				</div>
+				<div class="myCenter_line">
+					<a href="#">
+						<div class="myCenter_lineIcon">
+							 <img src="../../assets/img/my/souhu.png"/>
+						</div>
+						<div class="myCenter_lineText">
+							<span>搜狐号</span>
+							<img src="../../assets/img/my/more.png" alt="" />
+						</div>
+					</a>
+				</div>
+				<div class="myCenter_line">
+					<a href="http://shang.qq.com/wpa/qunwpa?idkey=9dc1089291180f7c7cb21cc14ea7dee5ee081f642408c640ba405e5666b6ac24">
+						<div class="myCenter_lineIcon">
+							 <img src="../../assets/img/my/QQ.png"/>
+						</div>
+						<div class="myCenter_lineText">
+							<span>产品交流群</span>
+							<img src="../../assets/img/my/more.png" alt="" />
+						</div>
+					</a>
+				</div>
+				<div class="myCenter_line">
+					<a href="http://shang.qq.com/wpa/qunwpa?idkey=5e7efd8783da885b423d3f00e78a6c7f636485f6c2501315c2e304bbefcdbfcf">
+						<div class="myCenter_lineIcon">
+							 <img src="../../assets/img/my/QQ.png"/>
+						</div>
+						<div class="myCenter_lineText">
+							<span>Axure交流群</span>
+							<img src="../../assets/img/my/more.png" alt="" />
+						</div>
+					</a>
+				</div>
+				<div class="myCenter_line">
+					<a href="http://shang.qq.com/wpa/qunwpa?idkey=2bc774244db4962ac7cb01c7dc51f86fa494431973fee768128405a8f21565a5">
+						<div class="myCenter_lineIcon">
+							 <img src="../../assets/img/my/QQ.png"/>
+						</div>
+						<div class="myCenter_lineText">
+							<span>产品求职群</span>
+							<img src="../../assets/img/my/more.png" alt="" />
+						</div>
+					</a>
+				</div>
+				<div class="myCenter_line" onclick="Lxbz()">
+					<a href="#">
+						<div class="myCenter_lineIcon">
+							 <img src="../../assets/img/my/lxbz.png"/>
+						</div>
+						<div class="myCenter_lineText">
+							<span>联系班主任</span>
+							<img src="../../assets/img/my/more.png" alt="" />
+						</div>
+					</a>
+				</div>
+				<div class="myCenter_line" onclick="Wxgzh()">
+					<a href="#">
+						<div class="myCenter_lineIcon">
+							 <img src="../../assets/img/my/weixin.png"/>
+						</div>
+						<div class="myCenter_lineText">
+							<span>微信公众号</span>
+							<img src="../../assets/img/my/more.png" alt="" />
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="myPopur" id="lxbz">
+			<div class="myPopurNone" onclick="Lxbz()"></div>
+			<div class="myPopur_frame">
+				<!--删除-->
+				<img src="../../assets/img/home/del.png" onclick="Lxbz()"/>
+				<!--二维码-->
+				<img src="../../assets/img/my/lianxi1.png" alt="" />
+				<div>识别二维码联系班主任</div>
+			</div>
+		</div>
+		
+		<div class="myPopur" id="wxgzh">
+			<div class="myPopurNone" onclick="Wxgzh()" onclick="Lxbz()"></div>
+			<div class="myPopur_frame">
+				<!--删除-->
+				<img src="../../assets/img/home/del.png"/>
+				<!--二维码-->
+				<img src="../../assets/img/my/lianxi2.png" alt="" />
+				<div>识别二维码添加微信公众号</div>
+			</div>
+			
+		</div>
+		
+		<div class="TYfooter">
+			<div>
+				<a href="../home/index.html">
+					<div>
+						<img src="../../assets/img/home/home_up.png"/>
+						<img src="../../assets/img/home/home_down.png"/>
+					</div>
+					<div>首页</div>
+				</a>
+			</div>
+			<div>
+				<a href="../buy/buy.html">
+					<div>
+						<img src="../../assets/img/home/shopping_up.png"/>
+						<img src="../../assets/img/home/shopping_down.png"/>
+					</div>
+					<div>购课</div>
+				</a>
+			</div>
+			<div>
+				<a href="../study/CourseSelection.html">
+					<div>
+						<img src="../../assets/img/home/learn_up.png"/>
+						<img src="../../assets/img/home/learn_down.png"/>
+					</div>
+					<div>学习</div>
+				</a>
+			</div>
+			<div class="active">
+				<a href="my.html">
+					<div>
+						<img src="../../assets/img/home/my_up.png"/>
+						<img src="../../assets/img/home/my_down.png"/>
+					</div>
+					<div>我的</div>
+				</a>
+			</div>
+		</div>
+		
+	</body>
+	<script type="text/javascript">
+		function Lxbz(){
+			document.querySelector("#lxbz").classList.toggle("active")
+		}
+		function Wxgzh(){
+			document.querySelector("#wxgzh").classList.toggle("active")
+		}
+	</script>
+</html>

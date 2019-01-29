@@ -1,0 +1,42 @@
+.login{overflow-y: auto;position: relative;width: 100%;min-height: 100%;left: 0;top: 0;background:url(../../assets/img/login/bj.png);background-size:cover ;}
+.loginLogo{margin: 0.7rem auto 0.55rem auto;width: 1.74rem;height: 1.74rem;overflow: hidden;border-radius: 50%;}
+.loginLogo img{width: 100%;height: 100%;object-fit: cover;}
+.loginFrame{padding:0 0.7rem;box-sizing: border-box;position: relative;margin: 0 auto;background: white;width: 6rem;height: 8rem;border-radius: 0.18rem;margin-bottom: 1rem;}
+.loginFrame_del{position: absolute;right: -0.36rem;top: -0.36rem;}
+.loginFrame_del img{width: 0.75rem;}
+.loginFrame_Title{text-align: center;font-size: 0.3rem;color: #333333;margin-bottom: 0.85rem;padding-top: 0.7rem;}
+.loginFrame_Title1{text-align: center;font-size: 0.3rem;color: #333333;margin-bottom: 0.2rem;padding-top: 0.4rem;}
+
+.loginFrame_Line{line-height: 0.9rem;height: 0.9rem;border-bottom: 1px solid #e5e5e5;position: relative;display: flex;align-items: center;}
+.loginFrame_Line img{width: 0.26rem;}
+.loginFrame_Line input{width: calc(100% - 0.26rem);font-size: 0.26rem;border: 0;outline: 0;border-radius: 0;padding-left: 0.15rem;box-sizing: border-box;}
+.loginFrame_Line1{line-height: 1rem;height: 1rem;border-bottom: 1px solid #e5e5e5;position: relative;display: flex;align-items: center;}
+.loginFrame_Line1 img{width: 0.26rem;}
+.loginFrame_Line1 input{width: calc(100% - 0.26rem);font-size: 0.26rem;border: 0;outline: 0;border-radius: 0;padding-left: 0.15rem;box-sizing: border-box;}
+.loginFrame_Line2{margin-bottom: 0.45rem;line-height: 1rem;height: 1rem;border-bottom: 1px solid #e5e5e5;position: relative;display: flex;align-items: center;}
+.loginFrame_Line2 img:first-of-type{width: 0.26rem;}
+.loginFrame_Line2 input{width: 2.3rem;font-size: 0.26rem;border: 0;outline: 0;border-radius: 0;padding-left: 0.15rem;box-sizing: border-box;}
+.loginFrame_Line2 img:last-of-type{width: 2.08rem;height: 0.6rem;}
+
+.loginFrame_xz{margin-top: 0.4rem;font-size: 0.26rem;color: #666666;margin-bottom: 2rem;}
+.loginFrame_xz input{width:0.26rem;height: 0.26rem;vertical-align: sub;margin-right: 0.2rem;}
+.loginFrame_xz span{vertical-align: middle;}
+.loginFrame_xz span:last-of-type{float: right;}
+.loginFrame_button{width: 4.6rem;height: 0.6rem;border-radius: 0.3rem;background: #4475f8;text-align: center;line-height: 0.6rem;color: white;font-size: 0.26rem;}
+.loginFrame_button a{color: white;display: block;}
+
+.loginBottom{width: 100%;font-size: 0.3rem;color: white;line-height: 0.36rem;text-align: center;margin-bottom: 0.55rem;}
+.loginBottom span{width: 1.7rem;border-right: 1px solid white;display: inline-block;}
+.loginBottom a:last-of-type span{border: 0;}
+.loginBottom span.active{font-size: 0.36rem;}
+.loginBottom a{color: white;font-size: 0.3rem;}
+
+.loginPopur{display: none;justify-content: center;align-items: center;position: fixed;background: rgba(0,0,0,0.5);width: 100%;height: 100%;left: 0;top: 0;z-index: 11;}
+.loginPopur.active{display: flex;}
+.loginPopurNone{position: absolute;z-index: 0;left: 0;top: 0;width: 100%;height: 100%;}
+.loginPopur_frame{padding: 0.4rem 0.7rem;box-sizing: border-box;position: relative;width: 6rem;height: 5rem;background: white;border-radius: 0.2rem;}
+.loginPopur_frame>img{position: absolute;right: 0.25rem;top: 0.25rem;width: 0.18rem;}
+.loginPopur_frameHeader{width: 100%;font-size: 0.3rem;color: #333333;text-align: center;margin-bottom: 0.7rem;}
+.loginPopur_frameLine{margin-bottom: 1.2rem;border-bottom: 1px solid #e5e5e5;height: 1.1rem;display: flex;align-items: center;}
+.loginPopur_frameLine>img{width: 0.24rem;height: 0.2rem;margin-right: 0.1rem;}
+.loginPopur_frameLine>input{font-size: 0.26rem;width: 100%;outline: none;border: 0;}

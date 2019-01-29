@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0, user-scalable=no">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../assets/css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../../assets/css/TY.css" />
+		<link rel="stylesheet" type="text/css" href="my.css" />
+		<script src="../../assets/js/rem.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="TYheader1">
+			<div class="TYheader_left">
+				<a href="my.html">
+					<span>取消</span>
+				</a>
+			</div>
+			<div class="TYheader_center">
+				<span>编辑</span>
+			</div>
+			<div class="TYheader_right">
+				<div class="TYheader_rightButton" onclick="Complete()">
+					<span>完成</span>
+				</div>
+			</div>
+		</div>
+		<div class="TYsection">
+			<div class="myEdit_frame">
+				<div class="myEdit_line">
+					<div class="myEdit_lineLeft">
+						<div class="myEdit_lineLeft_img">
+							<img src="../../assets/img/photo.png" />
+						</div>
+						
+					</div>
+					<div class="myEdit_lineRight">
+						<span>修改头像</span>
+						
+					</div>
+					<input type="file" name="" id="" accept="image/*" onchange="l(this)"/>
+				</div>
+				<div class="myEdit_line">
+					<div class="myEdit_lineLeft">
+						用户名
+					</div>
+					<div class="myEdit_lineRight">
+						<input type="text" name="" id="" placeholder="挥着翅膀的鱼" />
+					</div>
+				</div>
+				<div class="myEdit_line">
+					<div class="myEdit_lineLeft">
+						邮箱
+					</div>
+					<div class="myEdit_lineRight">
+						<input type="text" name="" id="" placeholder="123456789@qq.com" />
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="TYfooter">
+			<div>
+				<a href="../home/index.html">
+					<div>
+						<img src="../../assets/img/home/home_up.png" />
+						<img src="../../assets/img/home/home_down.png" />
+					</div>
+					<div>首页</div>
+				</a>
+			</div>
+			<div>
+				<a href="../buy/buy.html">
+					<div>
+						<img src="../../assets/img/home/shopping_up.png" />
+						<img src="../../assets/img/home/shopping_down.png" />
+					</div>
+					<div>购课</div>
+				</a>
+			</div>
+			<div>
+				<a href="../study/CourseSelection.html">
+					<div>
+						<img src="../../assets/img/home/learn_up.png" />
+						<img src="../../assets/img/home/learn_down.png" />
+					</div>
+					<div>学习</div>
+				</a>
+			</div>
+			<div class="active">
+				<a href="my.html">
+					<div>
+						<img src="../../assets/img/home/my_up.png" />
+						<img src="../../assets/img/home/my_down.png" />
+					</div>
+					<div>我的</div>
+				</a>
+			</div>
+		</div>
+		<script type="text/javascript">
+			//判断是否登录  没有登录跳转到登录页
+			if(localStorage.getItem("userId") == null || localStorage.getItem("userID") == "") {
+				window.location.href = "../login/login.html";
+			}
+			
+			//上传图片修改头像
+			function l(evn){
+	            var file = event.target.files[0];
+	            if (window.FileReader) {
+	                var reader = new FileReader();
+	                reader.readAsDataURL(file);
+	                //监听文件读取结束后事件
+	                reader.onloadend = function (e) {
+	                    document.querySelector(".myEdit_lineLeft_img img").setAttribute("src",e.target.result);    //e.target.result就是最后的路径地址
+	                };
+	            }
+
+	        }
+			
+			//修改成功后返回我的页面
+			function Complete(){
+				window.location.href = "../my/my.html";
+			}
+		</script>
+	</body>
+
+</html>

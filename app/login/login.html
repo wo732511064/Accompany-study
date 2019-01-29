@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0, user-scalable=no">
+		<title>选课</title>
+		<link rel="stylesheet" type="text/css" href="../../assets/css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../../assets/css/TY.css" />
+		<link rel="stylesheet" type="text/css" href="login.css" />
+		<script src="../../assets/js/rem.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="login">
+			<div class="loginLogo">
+				<img src="../../assets/img/login/header-logo.png"/>
+			</div>
+			<div class="loginFrame">
+				<div class="loginFrame_del">
+					<a href="../home/index.html">
+						<img src="../../assets/img/login/del.png"/>
+					</a>
+				</div>
+				<div class="loginFrame_Title">
+					<span>欢迎登录陪学网</span>
+				</div>
+				<div class="loginFrame_Line">
+					<img src="../../assets/img/login/yh.png" alt="" />
+					<input type="text" placeholder="请输入用户名"/>
+				</div>
+				<div class="loginFrame_Line">
+					<img src="../../assets/img/login/mima.png" alt="" />
+					<input type="password" placeholder="请输入密码"/>
+				</div>
+				<div class="loginFrame_xz">
+					<input type="checkbox" name="" id="" value="" />
+					<span>下次自动登录</span>
+					<span class="redText" onclick="Popur()">忘记密码</span>
+				</div>
+				<div class="loginFrame_button" onclick="Login()">
+					<span>登录</span>
+				</div>
+			</div>
+			<div class="loginBottom">
+				<a href="login.html"><span class="active">登录</span></a>
+				<a href="register.html"><span>注册</span></a>
+			</div>
+		</div>
+		
+		<div class="loginPopur">
+			<div class="loginPopurNone" onclick="Popur()"></div>
+			<div class="loginPopur_frame">
+				<img src="../../assets/img/home/del.png" alt=""  onclick="Popur()"/>
+				<div class="loginPopur_frameHeader">找回密码</div>
+				<div class="loginPopur_frameLine">
+					<img src="../../assets/img/login/email.png" alt="" />
+					<input type="请输入注册邮件" name="" id="" value="" placeholder="请输入注册邮箱"/>
+				</div>
+				<div class="loginFrame_button"  onclick="Popur()">
+					<span>发送</span>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		function Login(){
+			localStorage.setItem("userId", 123);
+			console.log(localStorage.getItem("userId"))
+			window.location.href="../home/index.html"
+		}
+		function Popur(){
+			document.querySelector(".loginPopur").classList.toggle("active")
+		}
+	</script>
+</html>

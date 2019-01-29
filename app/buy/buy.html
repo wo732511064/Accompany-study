@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0, user-scalable=no">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../assets/css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../../assets/css/TY.css" />
+		<link rel="stylesheet" type="text/css" href="../../assets/css/magic-input.css" />
+		<link rel="stylesheet" type="text/css" href="buy.css" />
+		<script src="../../assets/js/rem.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+
+		<div class="TYsection2">
+			<div class="buyTop">
+				<div class="buyTopFrame">
+					<div class="buyTopFrame_img"><img src="../../assets/img/photo.png" /></div>
+					<div class="buyTopFrame_title">
+						<span>挥着翅膀的鱼</span>
+					</div>
+					<div class="buyTopFrame_text">
+						<span>Email：123456789@qq.com</span>
+					</div>
+					<div class="buyTopFrame_num">
+						<div class="buyTopFrame_numItem">
+							<div>0</div>
+							<div>我的课程</div>
+						</div>
+						<div class="buyTopFrame_numItem">
+							<div>0</div>
+							<div>已购买课程</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--添加active时显示课程-->
+			<div class="buyFrame active">
+				<!--无课状态-->
+				<div class="buyFrame_none">
+					<div>
+						<img src="../../assets/img/buy/buy.png" alt="" />
+						<div class="buyFrame_noneButton">
+							<a href="../home/ProductCourse.html">
+								找课件
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<!--有课程-->
+				<div class="buyFrame_block">
+					<div class="buyFrame_blockItem">
+						
+							<div>
+								<input type="checkbox" class="mgc mgc-danger" name="item"/>
+								<a href="../home/studyContent.html">
+									<div class="buyFrame_blockItem_img">
+										<img src="../../assets/img/home/studyIMG.png" />
+									</div>
+									<div class="buyFrame_blockItem_frame">
+										<div class="buyFrame_blockItem_title">零基础：玩转web产品原型设计</div>
+										<div class="buyFrame_blockItem_text">2018.9.26 10:52:48</div>
+										<div class="buyFrame_blockItem_text">已更新至198节</div>
+										<div class="buyFrame_blockItem_money">
+											<span>￥198.00</span>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="buyFrame_blockItem_del" onclick="ItemDel(this)">
+								删除
+							</div>
+						
+					</div>
+					<div class="buyFrame_blockItem">
+						
+						<div>
+							<input type="checkbox" class="mgc mgc-danger" name="item"/>
+							<a href="../home/studyContent.html">
+								<div class="buyFrame_blockItem_img">
+									<img src="../../assets/img/home/studyIMG.png" />
+								</div>
+								<div class="buyFrame_blockItem_frame">
+									<div class="buyFrame_blockItem_title">零基础：玩转web产品原型设计</div>
+									<div class="buyFrame_blockItem_text">2018.9.26 10:52:48</div>
+									<div class="buyFrame_blockItem_text">已更新至198节</div>
+									<div class="buyFrame_blockItem_money">
+										<span>￥198.00</span>
+									</div>
+								</div>
+							</a>	
+						</div>
+						<div class="buyFrame_blockItem_del" onclick="ItemDel(this)">
+							删除
+						</div>
+					</div>
+					<div class="buyFrame_blockItem">
+						<div>
+							<input type="checkbox" class="mgc mgc-danger" name="item"/>
+							<a href="../home/studyContent.html">
+								<div class="buyFrame_blockItem_img">
+									<img src="../../assets/img/home/studyIMG.png" />
+								</div>
+								<div class="buyFrame_blockItem_frame">
+									<div class="buyFrame_blockItem_title">零基础：玩转web产品原型设计</div>
+									<div class="buyFrame_blockItem_text">2018.9.26 10:52:48</div>
+									<div class="buyFrame_blockItem_text">已更新至198节</div>
+									<div class="buyFrame_blockItem_money">
+										<span>￥198.00</span>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="buyFrame_blockItem_del" onclick="ItemDel(this)">
+							删除
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="buyBottom">
+			<div><input type="checkbox" class="mgc mgc-danger" id="allChecked" onclick="DoCheck()" /><span>全选</span></div>
+			<div><span>合计：</span><span class="redText">￥198.00</span></div>
+			<div onclick="Jiesuan()"><span>结算</span></div>
+		</div>
+
+		<div class="TYfooter">
+			<div>
+				<a href="../home/index.html">
+					<div>
+						<img src="../../assets/img/home/home_up.png" />
+						<img src="../../assets/img/home/home_down.png" />
+					</div>
+					<div>首页</div>
+				</a>
+			</div>
+			<div class="active">
+				<a href="buy.html">
+					<div>
+						<img src="../../assets/img/home/shopping_up.png" />
+						<img src="../../assets/img/home/shopping_down.png" />
+					</div>
+					<div>购课</div>
+				</a>
+			</div>
+			<div>
+				<a href="../study/CourseSelection.html">
+					<div>
+						<img src="../../assets/img/home/learn_up.png" />
+						<img src="../../assets/img/home/learn_down.png" />
+					</div>
+					<div>学习</div>
+				</a>
+			</div>
+			<div>
+				<a href="../my/my.html">
+					<div>
+						<img src="../../assets/img/home/my_up.png" />
+						<img src="../../assets/img/home/my_down.png" />
+					</div>
+					<div>我的</div>
+				</a>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		//多选按钮
+		var ch = document.getElementsByName("item");
+		function DoCheck() {
+
+			if(document.getElementById("allChecked").checked == true) {
+				for(var i = 0; i < ch.length; i++) {
+					ch[i].checked = true;
+				}
+			} else {
+				for(var i = 0; i < ch.length; i++) {
+					ch[i].checked = false;
+				}
+			}
+		}
+		for(var i = 0; i < ch.length; i++) {
+			ch[i].onchange = function() {
+				qxFn();
+			};
+		}
+		var qxFn = function() {
+			var count = 0; //定义一个计数变量
+			for(var j = 0; j < ch.length; j++) { //遍历items
+				if(ch[j].checked == true) { //如果状态为选中，count+1
+					count++;
+				}
+				if(count == ch.length) { //如果被选中的个数等于items的长度
+					document.getElementById("allChecked").checked = true; //全选checkbox选中
+				} else {
+					document.getElementById("allChecked").checked = false; //全选checkbox不选中
+				}
+			}
+		};
+		
+		//结算跳转页面
+		function Jiesuan(){
+			window.location.href="../buy/pay.html"
+		}
+		
+		//点击删除事件
+		function ItemDel(event){
+			console.log(event.parentNode,event.parentNode.parentNode)
+			event.parentNode.parentNode.removeChild(event.parentNode);
+		}
+		
+		//展开删除事件
+		var moveUl = document.querySelectorAll(".buyFrame_blockItem"),
+			start = 0,
+			startY = 0,
+			tform = 0,
+			tformY = 0;
+						
+		function handlerTouchEvent(event) {
+			//只跟踪一次触摸
+			if(event.touches.length == 1 || event.touches.length == 0) {
+				
+				switch(event.type) {
+					case "touchstart":
+						
+						start = event.touches[0].clientX;
+						startY = event.touches[0].clientY;
+						for(let i = 0; i < moveUl.length; i++) {
+							moveUl[i].querySelector("div:first-of-type").style.transform = "translateX(0)"
+							console.log(moveUl[i].querySelector("div:first-of-type"))
+						} 
+						break;
+					case "touchend":
+					console.log(tform,this.querySelector(".buyFrame_blockItem_del").clientWidth/2)
+						if(tform < this.querySelector(".buyFrame_blockItem_del").clientWidth){
+							tform = 0;
+							this.querySelector("div:first-of-type").style.transform = "translateX(-" + tform + "px)"
+						}
+						break;
+					case "touchmove":
+						var width = document.body.offsetWidth;
+						
+						let X = event.touches[0].clientX - start; //x轴的滑动值
+						let Y = event.touches[0].clientY - startY; //y轴的滑动值
+		
+						if(Math.abs(X) > Math.abs(Y) && X > 0) {
+							event.preventDefault();
+						} else if(Math.abs(X) > Math.abs(Y) && X < 0) {
+							event.preventDefault();
+						} else if(Math.abs(Y) > Math.abs(X) && Y > 0) {
+		
+						} else if(Math.abs(Y) > Math.abs(X) && Y < 0) {
+		
+						} else {
+							console.log("just touch");
+						}
+						
+						tform = start - event.changedTouches[0].clientX;
+						if(tform >= this.querySelector(".buyFrame_blockItem_del").clientWidth){
+							tform = this.querySelector(".buyFrame_blockItem_del").clientWidth;
+						}
+						if(tform <=0){
+							tform = 0
+						}
+						this.querySelector("div:first-of-type").style.transform = "translateX(-" + tform + "px)"
+				}
+			}
+		}
+		
+		for(let i=0;i<moveUl.length;i++){
+			moveUl[i].addEventListener('touchstart', handlerTouchEvent, false);
+			moveUl[i].addEventListener('touchmove', handlerTouchEvent, false);
+			moveUl[i].addEventListener('touchend', handlerTouchEvent, false);
+		}
+		
+	</script>
+
+</html>

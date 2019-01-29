@@ -1,0 +1,39 @@
+.myTop{padding: 0.3rem 0.2rem;background: white;box-sizing: border-box;display: flex;margin-bottom: 0.2rem;}
+.myTop_img{width: 1rem;height: 1rem;overflow: hidden;border-radius: 50%;margin-right: 0.2rem;}
+.myTop_img img{width: 100%;height: 100%;object-fit: cover;}
+.myTop_center{width: 5.3rem;height: 1rem;}
+.myTop_center div{width: 100%;border: 0;outline: none;height: 0.5rem;color: #333333;font-size: 0.3rem;}
+.myTop_center div:last-of-type{color: #999999;font-size: 0.26rem;}
+.myTop_edit{width: 0.5rem;height: 0.5rem;text-align: right;}
+.myTop_edit a{display: block;}
+.myTop_edit img{width: 0.26rem;height: 0.31rem;margin-top: 0.1rem;}
+
+.myCenter{background: white;margin-bottom: 0.2rem;}
+.myCenter_line{width: 100%;height: 1.1rem;display: flex;}
+.myCenter_line a{display: flex;width: 100%;}
+.myCenter_lineIcon{width: 1.2rem;line-height: 1.1rem;text-align: center;}
+.myCenter_lineIcon img{height: 0.48rem;vertical-align: middle;}
+.myCenter_lineText{width: 6.3rem;display: flex;align-items: center;border-bottom: 1px solid #e5e5e5;font-size: 0.3rem;}
+.myCenter_lineText>span{width: 5.8rem;display: inline-block;margin-right: 0.1rem;}
+.myCenter_lineText>img{width: 0.16rem;}
+.myCenter_line:last-of-type .myCenter_lineText{border: 0;}
+
+.myButton{font-size: 0.3rem;width: 100%;height: 1rem;line-height: 1rem;color: #333333;text-align: center;background: white;}
+
+.myEdit_frame{padding: 0 0.2rem;box-sizing: border-box;background: white;}
+.myEdit_line{position: relative;border-bottom: 1px solid #e5e5e5;display: flex;align-items: center;padding: 0.2rem 0;box-sizing: border-box;min-height: 1.1rem;}
+.myEdit_lineLeft{font-size: 0.26rem;color: #333333;width: 1.25rem;}
+.myEdit_lineLeft_img{width: 1rem;height: 1rem;overflow: hidden;border-radius:50%;}
+.myEdit_lineLeft_img img{width: 100%;height: 100%;object-fit: cover;}
+.myEdit_lineRight{height: 0.7rem;line-height: 0.7rem;font-size: 0.26rem;color: #999999;width: 5.85rem;text-align: right;}
+.myEdit_line input{font-size: 0.26rem;outline: none;border: 0;text-align: right;}
+.myEdit_line input[type="file"]{opacity: 0;position: absolute;width: 100%;height: 100%;}
+.myEdit_line:last-of-type{border: 0;}
+
+.myPopur{display: none;z-index: 11;position: fixed;width: 100%;height: 100%;left: 0;top: 0;background: rgba(0,0,0,0.5);align-items: center;justify-content: center;}
+.myPopur.active{display: flex;}
+.myPopurNone{position: absolute;left: 0;top: 0;width: 100%;height: 100%;z-index: 0;}
+.myPopur_frame{padding: 0.8rem 0;box-sizing: border-box;text-align: center;width:6rem;height: 5rem;border-radius: 0.2rem;background: white;position: relative;z-index: 1;}
+.myPopur_frame img:first-of-type{position: absolute;right: 0.25rem;top: 0.25rem;width: 0.18rem;}
+.myPopur_frame img:nth-of-type(2){width: 2.8rem;height: 2.8rem;}
+.myPopur_frame div{font-size: 0.28rem;margin-top: 0.5rem;}
