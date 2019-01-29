@@ -99,7 +99,10 @@
 				</a>
 			</div>
 		</div>
+		<!--阻止ios滚动条回弹出现空白-->
+		<script src="../../assets/js/iosHT.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
+			overscroll(document.querySelector('.TYsection'))
 			//判断是否登录  没有登录跳转到登录页
 			if(localStorage.getItem("userId") == null || localStorage.getItem("userID") == "") {
 				window.location.href = "../login/login.html";

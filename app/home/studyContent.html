@@ -198,7 +198,12 @@
 				</div>
 			</div>
 		</div>
+		<!--阻止ios滚动条回弹出现空白-->
+		<script src="../../assets/js/iosHT.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
+			overscroll(document.querySelector('.TYsection'))
+			overscroll(document.querySelector('.content_popurFrame_center'))
+			
 			var popur = document.querySelector(".content_popur");
 
 			function Popur() {

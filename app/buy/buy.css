@@ -33,13 +33,13 @@
 .buyFrame_noneButton{margin: 0 auto;width: 1.6rem;height: 0.6rem;border-radius: 0.3rem;font-size: 0.24rem;color: white;text-align: center;line-height: 0.6rem;background: #f55e48;}
 .buyFrame_noneButton a{display: block;color: white;}
 
-.buyBottom{box-shadow: 0 0 0.3rem rgba(0,0,0,0.1);position: fixed;bottom: 1rem;width: 100%;left: 0;height: 1rem;background: white;display: flex;justify-content:  space-between;align-items: center;padding: 0 0.2rem;box-sizing: border-box;}
+.buyBottom{box-shadow: 0 0 0.3rem rgba(0,0,0,0.1);position: absolute;bottom: 1rem;width: 100%;left: 0;height: 1rem;background: white;display: flex;justify-content:  space-between;align-items: center;padding: 0 0.2rem;box-sizing: border-box;}
 .buyBottom div{font-size: 0.28rem;color: #666666;display: flex;align-items: center;}
 .buyBottom div input{margin-right: 0.2rem;}
 .buyBottom div:last-of-type{width: 1.6rem;height: 0.6rem;text-align: center;line-height: 0.6rem;color: white;font-size: 0.24rem;border-radius: 0.3rem;background: #f55e48;justify-content: center;}
 .buyBottom a{color: white;}
 
-.paybuyFrame{overflow-y: auto;height: 100%;width: 100%;position: relative;padding-bottom: 1rem;box-sizing: border-box;}
+.paybuyFrame{width: 100%;position: relative;padding-bottom: 1rem;box-sizing: border-box;}
 .buyFrame_block1{width: 100%;box-sizing: border-box;position: relative;margin-bottom: 0.2rem;}
 .buyFrame_blockItem1{background: white;width:100%;height: 2.25rem;padding: 0rem 0 0 0.2rem;box-sizing: border-box;display: flex;align-items:center ;}
 .buyFrame_blockItem_frame1{padding: 0.2rem 0.2rem 0.2rem 0;width: 5.3rem;border-bottom: 1px solid #e5e5e5;box-sizing: border-box;}

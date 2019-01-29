@@ -120,7 +120,12 @@
 				</div>
 			</div>
 		</div>
+		<!--阻止ios滚动条回弹出现空白-->
+		<script src="../../assets/js/iosHT.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
+			overscroll(document.querySelector('.TYsection1'))
+			overscroll(document.querySelector('.datum_fl_Top'))
+			
 			var dheader = document.querySelectorAll(".datum_flFrame_header");
 			var popur = document.querySelector(".datum_popur");
 			var item = document.querySelectorAll(".datum_flFrame_item");

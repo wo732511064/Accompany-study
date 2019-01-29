@@ -2,10 +2,10 @@
 /*.selection_item{z-index: 3;position: absolute;transform:scale(1) translate(-50%,-50%);top: 52.5%;left: 50%;width: 6.9rem;height: 8.3rem;background: white;box-shadow: 2px 0 0.2rem rgba(0,0,0,0.1);}
 .selection_item:nth-of-type(2){z-index: 2;transform: scale(0.9) translate(-55%,-67%);opacity: 0.8;}
 .selection_item:nth-of-type(3){z-index: 1;transform: scale(0.8) translate(-60%,-87.5%);opacity: 0.6;}*/
-.selection_item{overflow: hidden;transition: all 0.1s;z-index: 3;position: absolute;transform:scale(1);margin-left: -3.45rem;margin-top: -4.5rem;top: 52.5%;left: 50%;width: 6.9rem;height: 8.3rem;background: white;box-shadow: 2px 0 0.2rem rgba(0,0,0,0.1);}
-.selection_item.last1{z-index: 2;transform: scale(0.9);opacity: 0.8;margin-top: -5.35rem;}
-.selection_item.last2{z-index: 1;transform: scale(0.8);opacity: 0.6;margin-top: -6.15rem;}
-.selection_item.last3{z-index: 0;transform: scale(0.8);opacity: 0;margin-top: -6.15rem;}
+.selection_item{overflow: hidden;transition: all 0.1s;z-index: 3;position: absolute;transform:scale(1);margin-left: -3.45rem;margin-top: -4.25rem;top: 52.5%;left: 50%;width: 6.9rem;height: 8.3rem;background: white;box-shadow: 2px 0 0.2rem rgba(0,0,0,0.1);}
+.selection_item.last1{z-index: 2;transform: scale(0.9);opacity: 0.8;margin-top: -5rem;}
+.selection_item.last2{z-index: 1;transform: scale(0.8);opacity: 0.6;margin-top: -5.75rem;}
+.selection_item.last3{z-index: 0;transform: scale(0.8);opacity: 0;margin-top: -5.75rem;}
 .selection_itemImg{width: 100%;height: 4.1rem;overflow: hidden;}
 .selection_itemImg img{width: 100%;height: 100%;object-fit: cover;}
 .selection_itemFrame{padding: 0.2rem;box-sizing: border-box;}
@@ -28,7 +28,7 @@
 
 .studyPopur{position: absolute;width: 100%;height: 100%;left: 0;top: 0;z-index: 11;transition: all 0.5s;transform: translateX(-100%);}
 .studyPopurNone{z-index: 0;position: absolute;width: 100%;height: 100%;left: 0;top: 0;}
-.study_catalog{width: 6.3rem;position: absolute;z-index: 11;left: 0;top: 0;background: white;height: 100%;}
+.study_catalog{    box-shadow: 0 0 0.2rem rgba(0,0,0,0.1);width: 6.3rem;position: absolute;z-index: 11;left: 0;top: 0;background: white;height: 100%;}
 .studyPopur.active{transform: translateX(0);}
 .study_catalogHeader{padding: 0.3rem 0 0 0.2rem;height: 0.9rem;box-sizing: border-box;color: #333333;font-size: 0.36rem;border-bottom: 1px solid #e5e5e5;}
 .study_catalogCenter{width: 100%;position: relative;height:calc(100% - 0.9rem);}

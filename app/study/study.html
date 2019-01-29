@@ -199,7 +199,13 @@
 	</body>
 	<script src="../../assets/js/jwplayer.js" type="text/javascript" charset="utf-8"></script>
 	<script src="../../assets/js/jwpsrv.js"></script>
+	<!--阻止ios滚动条回弹出现空白-->
+	<script src="../../assets/js/iosHT.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
+		overscroll(document.querySelector('.TYsection2'))
+		overscroll(document.querySelector('.study_catalogCenter_left'))
+		overscroll(document.querySelector('.study_catalogCenter_Right'))
+		
 		var popur = document.querySelector(".studyPopur")
 		//判断是否登录  没有登录跳转到登录页
 		if(localStorage.getItem("userId") == null || localStorage.getItem("userID") == ""){

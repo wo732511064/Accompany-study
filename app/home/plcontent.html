@@ -9,6 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="../../assets/css/TY.css" />
 		<link rel="stylesheet" type="text/css" href="home.css" />
 		<script src="../../assets/js/rem.js" type="text/javascript" charset="utf-8"></script>
+	
 	</head>
 
 	<body>
@@ -479,7 +480,12 @@
 			</div>
 		</div>
 
+		<!--阻止ios滚动条回弹出现空白-->
+		<script src="../../assets/js/iosHT.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
+			overscroll(document.querySelector('.TYsection1'))
+			overscroll(document.querySelector('.content_popurFrame_center'))
+			
 			//阻止微信input框输入后下方空白
 			function inputBlur(){
 		      window.scrollTo(0, 0)
