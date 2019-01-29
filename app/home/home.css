@@ -72,7 +72,7 @@
 .datum_flFrame_item div img{position: absolute;right: 0.1rem;top: 0.1rem;width: 0.1rem;display: none;}
 .datum_flFrame:last-of-type .datum_flFrame_item{border: 0;}
 
-.datum_baoming{position: fixed;bottom: 0;;left:0;width: 100%;height: 1rem;line-height: 1rem;color: white;text-align: center;background: #f4523b;}
+.datum_baoming{position: relative;bottom: 0;;left:0;width: 100%;height: 1rem;line-height: 1rem;color: white;text-align: center;background: #f4523b;}
 .datum_baoming a{display: block;color: white;}
 .datum_baoming>div{display: inline-block;vertical-align: middle;position: relative;font-size: 0.36rem;line-height: 1;}
 .datum_baoming>div.active img{display: block;}
@@ -105,10 +105,10 @@
 .YX_button>div:last-of-type{margin-bottom: 0.6rem;}
 .YX_button>div img{width: 1.16rem;}
 
-.content_popur{bottom: 0;overflow: hidden;position: fixed;z-index: 10;width: 100%;height: 100%;transform: translateY(100%);transition: all 0.3s;}
-.content_popur.active{transform: translateY(0%);}
+.content_popur{top: 0;bottom: 0;overflow: hidden;position: absolute;z-index: 10;width: 100%;height: 100%;transform: translateY(100%);transition: all 0.3s;display: none;}
+.content_popur.active{transform: translateY(0%);position: absolute;display: block;}
 .content_popurNode{overflow: hidden;position: absolute;z-index: 1;width: 100%;height: 100%;left: 0;top: 0;}
-.content_popurFrame{background: white;position: absolute;z-index: 1;width: 100%;bottom: 0;left: 0;top: 5.03rem;}
+.content_popurFrame{background: white;position: inherit;z-index: 1;width: 100%;bottom: 0;left: 0;top: 5.03rem;}
 .content_popurFrame_header{border-bottom: 1px solid #e5e5e5;position: relative;height: 0.8rem;line-height: 0.8rem;padding: 0 0.2rem;box-sizing: border-box;font-size: 0.28rem;color: #333333;}
 .content_popurFrame_header img{width: 0.24rem;}
 .content_popurFrame_header div{right: 0;top: 0;position: absolute;width: 0.8rem;height: 0.8rem;display: flex;justify-content: center;align-items: center;}

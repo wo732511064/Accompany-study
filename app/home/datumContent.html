@@ -278,6 +278,11 @@
 			moveUl.addEventListener('touchstart', handlerTouchEvent, true);
 			moveUl.addEventListener('touchmove', handlerTouchEvent, true);
 			moveUl.addEventListener('touchend', handlerTouchEvent, true);
+			
+			//阻止微信input框输入后下方空白
+			function inputBlur(){
+		      window.scrollTo(0, 0)
+		    }
 		</script>
 	</body>
 

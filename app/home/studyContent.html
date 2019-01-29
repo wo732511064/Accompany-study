@@ -194,7 +194,7 @@
 					<div class="content_popurFrame_more">没有更多评论了</div>
 				</div>
 				<div class="content_popurFrame_bottom">
-					<input type="search" placeholder="说点什么吧" name="" id="" value="" />
+					<input type="search" placeholder="说点什么吧" onblur="inputBlur()" name="" id="" value="" />
 				</div>
 			</div>
 		</div>
@@ -265,6 +265,10 @@
 			moveUl.addEventListener('touchstart', handlerTouchEvent, true);
 			moveUl.addEventListener('touchmove', handlerTouchEvent, true);
 			moveUl.addEventListener('touchend', handlerTouchEvent, true);
+		
+			function inputBlur(){
+		      window.scrollTo(0, 0)
+		    }
 		</script>
 	</body>
 
